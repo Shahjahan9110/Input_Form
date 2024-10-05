@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Submit Your Details</h2>
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <span class="error" id="emailError"></span>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+            <span class="error" id="phoneError"></span>
+
+            <label for="cv">CV:</label>
+            <textarea id="cv" placeholder="Write a brief CV"></textarea>
+            <span class="error" id="cvError"></span>
+
+            <label for="skills">Skill Sets:</label>
+            <textarea id="skills" placeholder="Enter your skill sets"></textarea>
+            <span class="error" id="skillsError"></span>
+
+            <button type="button" onclick="saveData()">Submit</button>
+        </form>
+
+        <div class="result" id="result">
+            <h3>Saved Data:</h3>
+            <p><strong>Name:</strong> <span id="savedName"></span></p>
+            <p><strong>Email:</strong> <span id="savedEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="savedPhone"></span></p>
+            <p><strong>CV:</strong> <span id="savedCV"></span></p>
+            <p><strong>Skills:</strong> <span id="savedSkills"></span></p>
+        </div>
+    </div>
+ <script src="form.js"></script>
+ 
+</body>
+</html>
